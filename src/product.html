@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Товар"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <div class="page__container">
+                @@include('html/_crumbs.htm',{})
+                <section class="product">
+                    <div class="product__top top-product">
+                        <div data-tabs data-tabs-animate="100" class="top-product__galleries">
+                            <div data-tabs-titles class="top-product__thumbs">
+                                <button type="button" class="top-product__title _tab-active">
+                                    <img data-src="@img/products/productBig.jpg" alt="">
+                                </button>
+                                <button type="button" class="top-product__title">
+                                    <img data-src="@img/products/product2.jpg" alt="">
+                                </button>
+                                <button type="button" class="top-product__title">
+                                    <img data-src="@img/products/productBig.jpg" alt="">
+                                </button>
+                            </div>
+                            <div data-tabs-body class="top-product__images" data-gallery>
+                                <a href="@img/products/productBig.jpg" class="top-product__body">
+                                    <div class="top-product__image">
+                                        <img data-src="@img/products/productBig.jpg" alt="">
+                                    </div>
+                                </a>
+                                <a href="@img/products/productBig.jpg" class="top-product__body">
+                                    <div class="top-product__image">
+                                        <img data-src="@img/products/product2.jpg" alt="">
+                                    </div>
+                                </a>
+                                <a href="@img/products/productBig.jpg" class="top-product__body">
+                                    <div class="top-product__image">
+                                        <img data-src="@img/products/productBig.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <form class="top-product__info info-product">
+                            <h1 class="info-product__title">Банная Печь Макси до 30м³ (Ламель Баня) в облицовке</h1>
+                            <div class="info-product__price-favorite">
+                                <div class="info-product__price">
+                                    184 400 ₽
+                                </div>
+                                <a class="info-product__favorite">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22"
+                                        fill="none">
+                                        <path
+                                            d="M11.8763 22C11.5052 22 10.8866 21.7556 10.3918 21.3889C3.58763 17.1111 0 12.3444 0 7.57778C0 3.3 3.09278 0 7.29897 0C9.15464 0 10.7629 0.611111 12 1.83333C13.2371 0.611111 14.8454 0 16.701 0C20.7835 0 24 3.3 24 7.57778C24 12.2222 20.4124 16.9889 13.6082 21.3889C12.866 21.7556 12.3711 22 11.8763 22ZM7.29897 1.83333C4.20619 1.83333 1.85567 4.27778 1.85567 7.57778C1.85567 11.4889 5.19588 15.8889 11.3814 19.8C11.7526 20.0444 11.8763 20.0444 12 20.0444C12 20.0444 12.1237 19.9222 12.4948 19.8C18.6804 15.8889 22.0206 11.4889 22.0206 7.57778C22.0206 4.27778 19.7938 1.83333 16.5773 1.83333C14.9691 1.83333 13.4845 2.56667 12.6186 3.78889L11.8763 4.88889L11.134 3.78889C10.268 2.56667 8.90722 1.83333 7.29897 1.83333Z"
+                                            fill="#999999" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="info-product__variants variants-product">
+                                <div class="variants-product__title">Варианты товара:</div>
+                                <div class="variants-product__list">
+                                    <div class="variants-product__item">
+                                        <input type="radio" name="variants" id="variant-1">
+                                        <label for="variant-1">
+                                            <img data-src="@img/products/productBig.jpg" alt="">
+                                        </label>
+                                    </div>
+                                    <div class="variants-product__item">
+                                        <input type="radio" name="variants" id="variant-2">
+                                        <label for="variant-2">
+                                            <img data-src="@img/products/productBig.jpg" alt="">
+                                        </label>
+                                    </div>
+                                    <div class="variants-product__item">
+                                        <input type="radio" name="variants" id="variant-3">
+                                        <label for="variant-3">
+                                            <img data-src="@img/products/productBig.jpg" alt="">
+                                        </label>
+                                    </div>
+                                    <div class="variants-product__item">
+                                        <input type="radio" name="variants" id="variant-4">
+                                        <label for="variant-4">
+                                            <img data-src="@img/products/productBig.jpg" alt="">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-product__quantity-title">Количество:</div>
+                            <div data-quantity class="info-product__quantity quantity">
+                                <button data-quantity-minus type="button"
+                                    class="quantity__button quantity__button_minus"></button>
+                                <div class="quantity__input">
+                                    <input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+                                </div>
+                                <button data-quantity-plus type="button"
+                                    class="quantity__button quantity__button_plus"></button>
+                            </div>
+                            <button type="submit" class="info-product__add button _fw">Добавить в корзину</button>
+                            <div class="info-product__additional additional-product">
+                                <div class="additional-product__item">
+                                    <span>Артикул:</span><span>BN1649557</span>
+                                </div>
+                                <div class="additional-product__item">
+                                    <span>Категория:</span><span>Печи для бани Vohringer</span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div data-tabs class="product__tabs tabs-product">
+                        <nav data-tabs-titles class="tabs-product__navigation">
+                            <button type="button" class="tabs-product__title _tab-active">Характеристики</button>
+                            <button type="button" class="tabs-product__title">Описание</button>
+                            <button type="button" class="tabs-product__title">Детали</button>
+                            <button type="button" class="tabs-product__title">Оплата и доставка</button>
+                        </nav>
+                        <div data-tabs-body class="tabs-product__content">
+                            <div class="tabs-product__body">
+                                <div class="characteristics">
+                                    <div class="characteristics__item">
+                                        <p>ДxШxВ:</p>
+                                        <p>600x610x960 мм</p>
+                                    </div>
+                                    <div class="characteristics__item">
+                                        <p>ДxШxВ:</p>
+                                        <p>600x610x960 мм</p>
+                                    </div>
+                                    <div class="characteristics__item">
+                                        <p>ДxШxВ:</p>
+                                        <p>600x610x960 мм</p>
+                                    </div>
+                                    <div class="characteristics__item">
+                                        <p>ДxШxВ:</p>
+                                        <p>600x610x960 мм</p>
+                                    </div>
+                                    <div class="characteristics__item">
+                                        <p>ДxШxВ:</p>
+                                        <p>600x610x960 мм</p>
+                                    </div>
+                                    <div class="characteristics__item">
+                                        <p>ДxШxВ:</p>
+                                        <p>600x610x960 мм</p>
+                                    </div>
+                                    <div class="characteristics__item">
+                                        <p>ДxШxВ:</p>
+                                        <p>600x610x960 мм</p>
+                                    </div>
+                                    <div class="characteristics__item">
+                                        <p>ДxШxВ:</p>
+                                        <p>600x610x960 мм</p>
+                                    </div>
+                                    <div class="characteristics__item">
+                                        <p>ДxШxВ:</p>
+                                        <p>600x610x960 мм</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs-product__body">
+                                <div class="text">
+                                    <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus fugit
+                                        delectus aliquid</h2>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio eveniet assumenda
+                                        quas culpa saepe, labore quod, commodi optio amet laudantium delectus provident
+                                        vel, neque repudiandae eos non omnis! Quos, laboriosam?
+                                        Minus, ab. Atque voluptatum dolore ducimus, veniam asperiores beatae laboriosam
+                                        nesciunt! Est ratione ex quas voluptatum beatae optio quos expedita earum harum
+                                        facere aspernatur, corrupti doloremque, inventore ab. Earum, aspernatur?</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In aliquid aut hic
+                                        dolorum deserunt! Perferendis sunt, corporis repudiandae animi voluptates saepe
+                                        pariatur sint quia fugit adipisci voluptas doloribus. Eligendi, pariatur.
+                                        Assumenda, quisquam? Cumque accusamus quaerat veniam hic earum a corrupti ea
+                                        recusandae, praesentium corporis dolorum culpa deserunt ut eligendi minima,
+                                        expedita tempore. Blanditiis recusandae rem, delectus iure mollitia itaque
+                                        minus.
+                                        Ducimus natus aliquam fuga esse nemo quaerat maiores. Rem, quisquam nisi? Ad
+                                        neque vel dignissimos veniam quisquam rerum, vitae sit sint et consectetur sed.
+                                        Vitae autem excepturi non a assumenda?</p>
+                                </div>
+                            </div>
+                            <div class="tabs-product__body">
+                                <div class="text"></div>
+                            </div>
+                            <div class="tabs-product__body">
+                                <div class="text">
+                                    <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus fugit
+                                        delectus aliquid</h2>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio eveniet assumenda
+                                        quas culpa saepe, labore quod, commodi optio amet laudantium delectus provident
+                                        vel, neque repudiandae eos non omnis! Quos, laboriosam?
+                                        Minus, ab. Atque voluptatum dolore ducimus, <strong> veniam asperiores beatae
+                                            laboriosam</strong>
+                                        nesciunt! Est ratione ex quas voluptatum beatae optio quos expedita earum harum
+                                        facere aspernatur, corrupti doloremque, inventore ab. Earum, aspernatur?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="related">
+                    <h2 class="related__title">Похожие товары</h2>
+                    <div class="related__list">
+                        @@include('html/_product-item.htm',{})
+                        @@include('html/_product-item.htm',{})
+                        @@include('html/_product-item.htm',{})
+                        @@include('html/_product-item.htm',{})
+                    </div>
+                </section>
+            </div>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

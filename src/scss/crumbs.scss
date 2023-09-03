@@ -1,0 +1,23 @@
+.crumbs {
+    margin: rem(30) 0;
+    // .crumbs__list
+    &__list {
+        display: flex;
+        gap: rem(8);
+    }
+    // .crumbs__item
+    &__item {
+        font-weight: 600;
+        font-size: rem(12);
+        color: $green;
+    }
+    // .crumbs__link
+    &__link {
+        display: flex;
+        gap: rem(8);
+        color: $mainColor;
+        &::after {
+            content: "-";
+        }
+    }
+}

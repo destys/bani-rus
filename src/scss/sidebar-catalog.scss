@@ -1,0 +1,83 @@
+.sidebar {
+    background-color: #fff;
+    // .sidebar__close
+    &__close {
+        width: 100%;
+        margin-bottom: rem(24);
+        text-align: right;
+
+        @media (min-width: $tablet) {
+            display: none;
+        }
+    }
+
+    // .sidebar__group
+    &__group {
+        gap: 0;
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 73, 10);
+        }
+
+        .spollers {
+            // .spollers__title
+            &__title {
+            }
+            // .spollers__body
+            &__body {
+                .checkbox {
+                    margin-bottom: 0;
+                    padding: rem(5) 0;
+                    // .checkbox__input
+                    &__input {
+                    }
+                    // .checkbox__label
+                    &__label {
+                    }
+                    // .checkbox__text
+                    &__text {
+                    }
+                }
+            }
+        }
+        &._catalog {
+        }
+    }
+}
+.group-sidebar {
+    // .group-sidebar__title
+    &__title {
+        padding: rem(13) 0;
+        border-bottom: 1px solid $mainColor;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    // .group-sidebar__item
+    &__item {
+    }
+}
+.item-group {
+    // .item-group__list
+    &__list {
+    }
+    // .item-group__link
+    &__link {
+        display: flex;
+        justify-content: space-between;
+        gap: rem(20);
+
+        padding: rem(13) 0 rem(13) rem(10);
+
+        font-size: rem(14);
+        color: $secondary;
+
+        &._current {
+            color: $green;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: $green;
+            }
+        }
+    }
+}

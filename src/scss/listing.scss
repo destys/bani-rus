@@ -1,0 +1,39 @@
+.listing {
+    margin-bottom: rem(40);
+
+    @media (min-width:$mobileSmall){
+         margin-bottom: rem(60); 
+    }
+
+    // .listing__title
+    &__title {
+        ._categories & {
+            margin-bottom: rem(20);
+            font-size: rem(18);
+
+            span {
+                font-weight: 400;
+                font-size: rem(15);
+                color: $secondary;
+            }
+        }
+    }
+    // .listing__list
+    &__list {
+        display: flex;
+        gap: rem(20);
+        overflow-x: scroll;
+
+        padding-bottom: rem(20);
+
+        @media (min-width: $mobileSmall) {
+            @include gridCards("fill", rem(250), 1fr, rem(20));
+            overflow: visible;
+            padding-bottom: 0;
+
+            ._categories & {
+                @include gridCards("fill", rem(200), 1fr, rem(20));
+            }
+        }
+    }
+}

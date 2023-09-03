@@ -1,0 +1,144 @@
+.services {
+    // .services__title
+    &__title {
+    }
+    // .services__row
+    &__row {
+        margin-bottom: rem(60);
+
+        // ._reverse
+        &._reverse {
+        }
+
+        &:last-child {
+            li {
+                text-transform: none;
+                color: $mainColor;
+            }
+        }
+
+        @media (min-width: $tablet) {
+            display: flex;
+            align-items: center;
+
+            &._reverse {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+    // .services__tabs
+    &__tabs {
+        @include adaptiveValue("margin-bottom", 85, 32);
+    }
+    // .services__text
+    &__text {
+        h2 {
+            text-transform: uppercase;
+        }
+
+        h4 {
+            font-weight: 500;
+            color: $mainColor;
+            text-transform: none;
+        }
+    }
+}
+.row-services {
+    // .row-services__image
+    &__image {
+        flex: 0 0 50%;
+        border-radius: 4px;
+        background: #d9d9d9;
+        overflow: hidden;
+
+        margin-bottom: rem(20);
+
+        @media (min-width: $tablet) {
+            margin-bottom: 0;
+        }
+    }
+    // .row-services__text
+    &__text {
+        text-align: justify;
+
+        h2 {
+            margin-bottom: rem(30);
+        }
+
+        p {
+            color: $secondary;
+        }
+
+        ul {
+            color: $green;
+            text-transform: uppercase;
+
+            li {
+                font-size: rem(14);
+                &:not(:last-child) {
+                    margin-bottom: rem(10);
+                }
+            }
+        }
+
+        @media (min-width: $tablet) {
+            padding: rem(30) rem(75);
+        }
+    }
+}
+.tabs-services {
+    // .tabs-services__navigation
+    &__navigation {
+        display: flex;
+        align-items: center;
+        gap: rem(15);
+
+        margin-bottom: rem(20);
+        padding-bottom: rem(20);
+
+        overflow-x: scroll;
+    }
+    // .tabs-services__title
+    &__title {
+        padding: rem(15) rem(25);
+        border-radius: 24px;
+        border: 1px solid #e6e4e4;
+        background: #f9f9fa;
+
+        font-weight: 600;
+        line-height: 1;
+        font-size: rem(14);
+
+        white-space: nowrap;
+
+        // ._tab-active
+        &._tab-active {
+            background-color: transparent;
+            color: $green;
+            border-color: $green;
+        }
+    }
+    // .tabs-services__content
+    &__content {
+    }
+    // .tabs-services__body
+    &__body {
+    }
+    // .tabs-services__list
+    &__list {
+        display: flex;
+        gap: rem(20);
+        overflow-x: scroll;
+
+        padding-bottom: rem(20);
+
+        @media (min-width: $mobile) {
+            padding-bottom: 0;
+            @include gridCards("fill", rem(300), 1fr, rem(20));
+        }
+    }
+    // .tabs-services__image
+    &__image {
+        flex: 0 0 48%;
+    }
+}

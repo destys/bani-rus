@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Услуги"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <div class="page__container">
+                @@include('html/_crumbs.htm',{})
+                <section class="services">
+                    <h1 class="services__title">Услуги</h1>
+                    <div class="services__row row-services">
+                        <div class="row-services__image">
+                            <img data-src="@img/services/image1.jpg" alt="">
+                        </div>
+                        <div class="row-services__text text">
+                            <h2>Кто мы</h2>
+                            <p>Более 10 лет успешной работы по отделке парных, саун, бань , а также установки печей ,
+                                печь-каминов, каминных топок в Москве и Московской области. При производстве работ по
+                                отделке парных и саун под ключ а также других видов работ специалисты нашей компании
+                                используют только качественные и экологичные материалы, строгое соблюдение технологий
+                                позволяет нам гарантировать безопасность вашего дома и долговечность ваших парилок .
+                                Опыт в установки печей и отделке саун и парных позволяет нам брать самые сложные проекты
+                                по отделке, находить грамотные решения нестандартных проектов.</p>
+                        </div>
+                    </div>
+                    <div class="services__row row-services _reverse">
+                        <div class="row-services__image">
+                            <img data-src="@img/services/image2.jpg" alt="">
+                        </div>
+                        <div class="row-services__text text">
+                            <h2>Основная специализация</h2>
+                            <ul>
+                                <li>Отделка парных</li>
+                                <li>Отделка бани</li>
+                                <li>Отделка сауны</li>
+                                <li>Сауна под ключ</li>
+                                <li>Монтаж Печи</li>
+                                <li>Монтаж Дымохода</li>
+                                <li>Монтаж Каминных Топок</li>
+                            </ul>
+                            <p>Работаем с 2010 года. Реализовано более 400 саун в Москве и Московской области Имеем
+                                команду высококлассных специалистов и огромный опыт в сфере классического и современного
+                                дизайна по отделке саун, парных и бань.</p>
+                            <p>Заключаем официальный договор и даем гарантию на все наши работы, материалы и услуги.</p>
+                        </div>
+                    </div>
+                </section>
+                <div class="advantages">
+                    <div class="advantages__item">
+                        <div class="advantages__icon">
+                            <img data-src="@img/advantages/icon1.svg" alt="">
+                        </div>
+                        <div class="advantages__title">Мастера <br>
+                            с опытом от 10 лет</div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__icon">
+                            <img data-src="@img/advantages/icon2.svg" alt="">
+                        </div>
+                        <div class="advantages__title">Сделано более <br>
+                            400 саун и бань</div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__icon">
+                            <img data-src="@img/advantages/icon3.svg" alt="">
+                        </div>
+                        <div class="advantages__title">Строим согласно <br>
+                            СНИП и ГОСТ</div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__icon">
+                            <img data-src="@img/advantages/icon4.svg" alt="">
+                        </div>
+                        <div class="advantages__title">Гарантия на <br>
+                            оборудование и материалы</div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__icon">
+                            <img data-src="@img/advantages/icon5.svg" alt="">
+                        </div>
+                        <div class="advantages__title">Оперативные сроки <br>
+                            выполнения работ</div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__icon">
+                            <img data-src="@img/advantages/icon6.svg" alt="">
+                        </div>
+                        <div class="advantages__title">Экологически <br>
+                            чистые материалы</div>
+                    </div>
+                </div>
+                <section class="services">
+                    <div data-tabs data-tabs-animate="500" class="services__tabs tabs-services">
+                        <h2 class="tabs-services__block-title">Наши работы</h2>
+                        <nav data-tabs-titles class="tabs-services__navigation">
+                            <button type="button" class="tabs-services__title _tab-active">Отделка бани под
+                                ключ</button>
+                            <button type="button" class="tabs-services__title">Монтаж печи и дымохода</button>
+                            <button type="button" class="tabs-services__title">Монтаж каминных топок</button>
+                        </nav>
+                        <div data-tabs-body class="tabs-services__content">
+                            <div class="tabs-services__body">
+                                <div class="tabs-services__list" data-gallery>
+                                    <a href="@img/services/item1.jpg" class="tabs-services__image">
+                                        <img data-src="@img/services/item1.jpg" alt="">
+                                    </a>
+                                    <a href="@img/services/item2.jpg" class="tabs-services__image">
+                                        <img data-src="@img/services/item2.jpg" alt="">
+                                    </a>
+                                    <a href="@img/services/item3.jpg" class="tabs-services__image">
+                                        <img data-src="@img/services/item3.jpg" alt="">
+                                    </a>
+                                    <a href="@img/services/item4.jpg" class="tabs-services__image">
+                                        <img data-src="@img/services/item4.jpg" alt="">
+                                    </a>
+                                    <a href="@img/services/item1.jpg" class="tabs-services__image">
+                                        <img data-src="@img/services/item1.jpg" alt="">
+                                    </a>
+                                    <a href="@img/services/item2.jpg" class="tabs-services__image">
+                                        <img data-src="@img/services/item2.jpg" alt="">
+                                    </a>
+                                    <a href="@img/services/item3.jpg" class="tabs-services__image">
+                                        <img data-src="@img/services/item3.jpg" alt="">
+                                    </a>
+                                    <a href="@img/services/item4.jpg" class="tabs-services__image">
+                                        <img data-src="@img/services/item4.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tabs-services__body">
+                                <div class="tabs-services__list" data-gallery>
+                                    <a href="@img/services/item1.jpg" class="tabs-services__image">
+                                        <img data-src="@img/services/item1.jpg" alt="">
+                                    </a>
+                                    <a href="@img/services/item2.jpg" class="tabs-services__image">
+                                        <img data-src="@img/services/item2.jpg" alt="">
+                                    </a>
+                                    <a href="@img/services/item3.jpg" class="tabs-services__image">
+                                        <img data-src="@img/services/item3.jpg" alt="">
+                                    </a>
+                                    <a href="@img/services/item4.jpg" class="tabs-services__image">
+                                        <img data-src="@img/services/item4.jpg" alt="">
+                                    </a>
+                                    <a href="@img/services/item1.jpg" class="tabs-services__image">
+                                        <img data-src="@img/services/item1.jpg" alt="">
+                                    </a>
+                                    <a href="@img/services/item2.jpg" class="tabs-services__image">
+                                        <img data-src="@img/services/item2.jpg" alt="">
+                                    </a>
+                                    <a href="@img/services/item3.jpg" class="tabs-services__image">
+                                        <img data-src="@img/services/item3.jpg" alt="">
+                                    </a>
+                                    <a href="@img/services/item4.jpg" class="tabs-services__image">
+                                        <img data-src="@img/services/item4.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tabs-services__body">
+                                <div class="tabs-services__list" data-gallery>
+                                    <a href="@img/services/item1.jpg" class="tabs-services__image">
+                                        <img data-src="@img/services/item1.jpg" alt="">
+                                    </a>
+                                    <a href="@img/services/item2.jpg" class="tabs-services__image">
+                                        <img data-src="@img/services/item2.jpg" alt="">
+                                    </a>
+                                    <a href="@img/services/item3.jpg" class="tabs-services__image">
+                                        <img data-src="@img/services/item3.jpg" alt="">
+                                    </a>
+                                    <a href="@img/services/item4.jpg" class="tabs-services__image">
+                                        <img data-src="@img/services/item4.jpg" alt="">
+                                    </a>
+                                    <a href="@img/services/item1.jpg" class="tabs-services__image">
+                                        <img data-src="@img/services/item1.jpg" alt="">
+                                    </a>
+                                    <a href="@img/services/item2.jpg" class="tabs-services__image">
+                                        <img data-src="@img/services/item2.jpg" alt="">
+                                    </a>
+                                    <a href="@img/services/item3.jpg" class="tabs-services__image">
+                                        <img data-src="@img/services/item3.jpg" alt="">
+                                    </a>
+                                    <a href="@img/services/item4.jpg" class="tabs-services__image">
+                                        <img data-src="@img/services/item4.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__row row-services">
+                        <div class="row-services__image">
+                            <img data-src="@img/services/image3.jpg" alt="">
+                        </div>
+                        <div class="row-services__text text">
+                            <h2>Что входит в работу:</h2>
+                            <ul>
+                                <li>Создание дизайн-проекта (по желанию, доп. услуга)</li>
+                                <li>Монтаж электрики</li>
+                                <li>Выставление каркаса</li>
+                                <li>Утепление стен</li>
+                                <li>Изоляция стен</li>
+                                <li>Обшивка вагонкой</li>
+                                <li>Монтаж полок</li>
+                                <li>Монтаж печи</li>
+                                <li>Установка дымоходов</li>
+                                <li>Изготовлнние и монтаж пано и декоративных элементов</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="services__text text">
+                    <h2>строительство бани и сауны «под ключ»</h2>
+                    <p>Баня или сауна — мечта многих домовладельцев. Это не удивительно, ведь баня — это синоним
+                        чистоты, отдыха и релаксации. Такую мечту легко воплотить в реальность, если грамотно подойти к
+                        постройке собственной бани. Но подходить к строительству сауны или бани нужно с умом, чтобы в
+                        итоге иметь у себя дома качественное и красивое место для релаксаци. Также не стоит забывать о
+                        безопасности. Необходимо выполнить отделку из высококачественных материалов, смонтировать
+                        правильный дымоход и учесть еще уйму всяких мелочей перед тем, как основательно приступать к
+                        строительству.</p>
+                    <h3>Создание проекта бани</h3>
+                    <p>На первом этапе строительства мы предлагаем заказчику типовые варианты проектов постройки бани,
+                        либо создаем индивидуальный проект, исходя из метража и других особенностей местности.
+                        Спроектировать баню можно тремя способами :</p>
+                    <ul>
+                        <li>Стационарный вариант бани с фундаментом.</li>
+                        <li>Мобильное сооружение, которое, в случае чего, можно перенести в другое место.</li>
+                        <li>Баня или сауна, пристроенная к дому. Самый популярный вариант, который требует особого
+                            внимания при отделке парной.</li>
+                    </ul>
+                    <h3>Выбор оборудования и варианта отделки</h3>
+                    <p>Прежде чем заказать отделку сауны «под ключ» — выберите подходящее именно для вас оборудование, а
+                        также решите, каким материалом вы хотели бы выполнить внутреннюю отделку.</p>
+                    <h3>Варианты печи в баню</h3>
+                    <p>Создать общую концепцию бани без соответствующей печи невозможно. Нужно основательно подойти к ее
+                        выбору, ведь от этого будет зависеть ваше удобство в парной, скорость нагрева камней и другие
+                        важные аспекты при эксплуатации.</p>
+                    <h4>Дровяная печь</h4>
+                    <p>Самый недорогой и простой вариант для нагрева камней в бане. Топливом выступает древесина,
+                        которая сгорает в топке, нагревая печь. У нее есть свои плюсы и минусы, которые подойдут
+                        немногим. Плюсы ее заключаются в том, что топливо для печи стоит недорого, а отдача тепла при
+                        этом на высочайшем уровне. Также дровяные печи очень широко представлены в нашем каталоге,
+                        поэтому вы сможете подобрать любой подходящий вариант.</p>
+                    <p>Самый главный минус дровяной печи в том, что древесину для сгорания нужно где-то хранить, а это
+                        становится серьезной проблемой для некоторых владельцев. За печью необходимо постоянно следить,
+                        ведь ответственность за возгорание ложится также на плечи хозяина бани. Необходим постоянный
+                        уход за оборудованием — следует выбрасывать золу, иногда прочищать дымоход и в процессе нагрева
+                        постоянно подбрасывать древесину в топку.</p>
+                    <h4>Газовая печь</h4>
+                    <p>Удобный и экономичный вариант нагрева с помощью газа. Использование газовой печи позволяет
+                        получить быстрый и экономичный нагрев. Но эксплуатировать газовую печь надо с умом, чтобы
+                        избежать утечки газа и исключить возможность возгорания вне печи, а также не допустить удушение
+                        угарным газом.</p>
+                    <h3>Отделка бани или сауны «под ключ»</h3>
+                    <p>Монтаж сауны начинается с выбора вагонки, которой следует обшивать стены парилки. Выбирать
+                        древесину нужно правильно, чтобы от влаги она не сильно расширялась, не испортилась изоляционная
+                        структура стен, и не поддалась влиянию сырости. Лучшими вариантами считаются кедр, липа или
+                        ольха. Также настоящая древесина придает парилке необыкновенный запах, что является немаловажным
+                        моментом при отделке бани или сауны.</p>
+                    <p>Под вагонкой по всем стандартам прокладывается пароизоляционная мембрана и базальтовая вата,
+                        которые закрываются фольгой. Тем самым создается теплоизоляционная конструкция, исключающая
+                        проникновение влаги под вагонку.</p>
+                    <p>Внутренняя отделка бани — сложный и кропотливый труд. Помимо обязательных шагов по типу отделки
+                        парилки вагонкой, плинтусом, создания вентиляционного отверстия, покупки камней для печи, можно
+                        докупить аксессуары для бани, создав полную картину парной. Например, установить термометр,
+                        купить ведро с ковшом и другие понравившиеся банные аксессуары.</p>
+                </section>
+                @@include('html/_catalog.htm,{})
+            </div>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

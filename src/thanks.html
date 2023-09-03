@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Спасибо за заказ"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <div class="page__container">
+                <section class="thanks">
+                    <h1 class="thanks__title">Заказ принят. Благодарим Вас</h1>
+                    <div class="thanks__order order-thanks">
+                        <div class="order-thanks__row">
+                            <p>Номер заказа:</p>
+                            <p>62541</p>
+                        </div>
+                        <div class="order-thanks__row">
+                            <p>Дата:</p>
+                            <p>24.07.2023</p>
+                        </div>
+                        <div class="order-thanks__row">
+                            <p>Email:</p>
+                            <p>ivanov@mail.ru</p>
+                        </div>
+                        <div class="order-thanks__row">
+                            <p>Итого:</p>
+                            <p>236 400 ₽</p>
+                        </div>
+                    </div>
+                    <div class="thanks__info info-thanks">
+                        <h3 class="info-thanks__title">Информация о заказе</h3>
+                        <div class="info-thanks__row _grey">
+                            <p>Товар</p>
+                            <p></p>
+                            <p>Подытог</p>
+                        </div>
+                        <div class="info-thanks__row">
+                            <p>Банная Печь Макси до 30м³ (Ламель Баня) в облицовке</p>
+                            <p>x1</p>
+                            <p>118 200 ₽</p>
+                        </div>
+                        <div class="info-thanks__row">
+                            <p>Банная Печь Макси до 30м³ (Ламель Баня) в облицовке</p>
+                            <p>x1</p>
+                            <p>118 200 ₽</p>
+                        </div>
+                        <div class="info-thanks__row">
+                            <p>Банная Печь Макси до 30м³ (Ламель Баня) в облицовке</p>
+                            <p>x1</p>
+                            <p>118 200 ₽</p>
+                        </div>
+                        <div class="info-thanks__row _grey">
+                            <p>Итого:</p>
+                            <p></p>
+                            <p>354 600 ₽</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

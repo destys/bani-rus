@@ -1,0 +1,27 @@
+//<BUTTONS (a.btn+tab)>
+// Сниппет (HTML): btn
+
+.button {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: rem(14) rem(27);
+
+	background-color: $green;
+	border-radius: 4px;
+
+	font-weight: 600;
+	color: #fff;
+
+	transition: background 0.2s ease-in-out;
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: darken($green, 5%);
+		}
+	}
+	&._fw {
+		width: 100%;
+	}
+}

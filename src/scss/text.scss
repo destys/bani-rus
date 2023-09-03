@@ -1,0 +1,28 @@
+.text {
+    margin-bottom: rem(60);
+    p {
+        &:not(:last-child) {
+            margin-bottom: rem(20);
+        }
+    }
+
+    ul {
+        margin-bottom: rem(20);
+
+        li {
+            list-style: inside;
+        }
+    }
+
+    h3 {
+        margin-bottom: rem(20);
+        font-weight: 500;
+        font-size: rem(20);
+    }
+
+    h4 {
+        margin-bottom: rem(10);
+        color: $green;
+        text-transform: uppercase;
+    }
+}
