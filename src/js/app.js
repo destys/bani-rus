@@ -82,7 +82,7 @@ flsFunctions.tabs();
 Документация: https://template.fls.guru/template-docs/funkcional-popup.html
 Сниппет (HTML): pl, pop
 */
-// import './libs/popup.js'
+import './libs/popup.js'
 
 /*
 Модуль паралакса мишкой
@@ -114,7 +114,7 @@ flsForms.formQuantity();
 // flsForms.formRating();
 
 /* Модуль работы с select. */
-import './libs/select.js'
+// import './libs/select.js'
 
 /* Модуль работы с календарем */
 // import './files/forms/datepicker.js'

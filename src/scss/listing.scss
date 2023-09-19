@@ -27,7 +27,7 @@
         padding-bottom: rem(20);
 
         @media (min-width: $mobileSmall) {
-            @include gridCards("fill", rem(250), 1fr, rem(20));
+            @include gridCards("fit", rem(250), 1fr, rem(20));
             overflow: visible;
             padding-bottom: 0;
 

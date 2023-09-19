@@ -30,7 +30,7 @@ class Popup {
 				bodyActive: 'popup-show', // добавляется для боди, когда попап открыт
 			},
 			focusCatch: true, // Фокус внутри попапа зациклен
-			closeEsc: истина, // закрытие ESC
+			closeEsc: true, // закрытие ESC
 			bodyLock: true, // блокировка скролла
 			hashSettings: {
 				location: false, // Хэш в адресной строке
@@ -101,7 +101,7 @@ class Popup {
 		this.options.init ? this.initPopups() : null
 	}
 	initPopups() {
-		this.popupLogging(`Прокинувся`);
+		this.popupLogging(`Проснулся`);
 		this.eventsPopup();
 	}
 	eventsPopup() {

@@ -32,6 +32,7 @@
         img {
             mix-blend-mode: darken;
             aspect-ratio: 1 / 1;
+            object-fit: contain;
         }
     }
     // .category__sub

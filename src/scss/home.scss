@@ -180,6 +180,10 @@
         padding-bottom: rem(20);
 
         overflow-x: scroll;
+
+        @media (min-width: $mobile) {
+            overflow: visible;
+        }
     }
     // .catalog__title
     &__title {

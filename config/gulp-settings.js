@@ -32,15 +32,15 @@ export const path = {
 	rootFolder: rootFolder,
 	srcFolder: srcFolder,
 	// Шлях до потрібної папки на віддаленому сервері.
-	ftp: ``
+	ftp: `/teploipar.ru/public_html/wp-content/themes/smdv`
 	// Приклад: завантажити в папку 2022 далі в папку з назвою проєкту
 	// ftp: `2022/${rootFolder}`
 };
 
 // Налаштування FTP з'єднання
 export const configFTP = {
-	host: "", // Адреса FTP сервера
-	user: "", // Ім'я користувача
-	password: "", // Пароль
+	host: "baniru7x.beget.tech", // Адреса FTP сервера
+	user: "baniru7x_dev", // Ім'я користувача
+	password: "E*D0jwnM", // Пароль
 	parallel: 5 // Кількість одночасних потоків
 }

@@ -1,4 +1,7 @@
 .product-item {
+    display: flex;
+    flex-direction: column;
+
     border: 1px solid #e6e6e6;
     background: #fff;
     position: relative;
@@ -33,6 +36,9 @@
     }
     // .product-item__content
     &__content {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
         padding: rem(10) rem(15);
     }
     // .product-item__title
@@ -48,6 +54,8 @@
         justify-content: space-between;
         align-items: center;
         gap: rem(20);
+
+        margin-top: auto;
     }
 }
 .footer-product {
@@ -58,6 +66,7 @@
     }
     // .footer-product__add
     &__add {
+        margin-left: auto;
         padding: rem(10) rem(20);
         border-radius: 30px;
         border: 1px solid $green;
